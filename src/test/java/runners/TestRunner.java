@@ -1,0 +1,1 @@
+package runners;\n\nimport org.junit.runner.RunWith;\nimport io.cucumber.junit.Cucumber;\nimport io.cucumber.junit.CucumberOptions;\n\n@RunWith(Cucumber.class)\n@CucumberOptions(\n  features = \"src/test/resources/features\",\n  glue = {\"stepDefinitions\"},\n  plugin = {\"pretty\", \"html:target/cucumber-reports\"},\n  monochrome = true\n)\npublic class TestRunner {\n}\n
