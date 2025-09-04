@@ -1,7 +1,8 @@
-Feature: Login functionality
+Feature: Customer Login
 
   Scenario: Successful login with valid credentials
-    Given I am on the login page
-    When I enter valid credentials
-    And I click on the Login button
-    Then I should be redirected to the secure area
+    Given I navigate to "https://phptravels.net/login"
+    When I enter "user@phptravels.com" in the email field
+    And I enter "demouser" in the password field
+    And I click on the "Login" button
+    Then I should see "PHPTRAVELS" on the dashboard page
