@@ -1,0 +1,1 @@
+package com.automation.framework.Runner;\n\nimport org.junit.runner.RunWith;\nimport io.cucumber.junit.Cucumber;\nimport io.cucumber.junit.CucumberOptions;\n\n@RunWith(Cucumber.class)\n@CucumberOptions(features = \"src/test/java/com/automation/framework/Feature\", glue = {\"com/automation/framework/Steps\"})\npublic class RunCucumberTest {\n}
