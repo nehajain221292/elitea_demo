@@ -1,0 +1,1 @@
+Feature: Customer Login\n\n  Scenario: Successful login with valid credentials\n    Given I navigate to \"https://phptravels.net/login\"\n    When I enter email \"user@phptravels.com\"\n    And I enter password \"demouser\"\n    And I click on the \"Login\" button\n    Then I should see the dashboard
